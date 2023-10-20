@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+}
+
+header {
+  padding: 1rem 0;
+  border-bottom: 1px solid #fff5f591;
+  position: absolute;
+  /* dung de ddee len  */
+  width: 100%;
+}
+.container {
+  width: 75%;
+  margin: 0 auto;
+}
+.header__content {
+  display: flex;
+  align-items: center;
+}
+
+.header__content nav {
+  margin-left: auto;
+}
+
+.header__content .logo {
+  text-decoration: none;
+  color: white;
+}
+
+.header__content i {
+  font-size: 2rem;
+}
+
+.header__content span {
+  font-size: 2rem;
+  color: white;
+}
+
+.header__content nav ul {
+  list-style: none;
+}
+
+.header__content nav ul li {
+  display: inline;
+  margin-left: 25px;
+}
+
+.header__content nav ul li a {
+  text-decoration: none;
+  /* color: white; */
+  transition: all 0.5s;
+  /* transition: hover co thoi gian */
+  color: white;
+}
+
+/* class active danh cho li minh no */
+.header__content nav ul li.active a {
+  color: red;
+}
+
+/* hover vo co mau */
+.header__content nav ul li:hover a {
+  color: red;
+}
+
+/* carousel */
+
+#carousel {
+  background-image: url(../img/home_slider.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  /* justify-content cang giua theo chieu ngang */
+}
+
+.carousel__content {
+  text-align: center;
+}
+
+.carousel__content p {
+  font-size: 2rem;
+  color: white;
+}
+.carousel__content h1 {
+  font-size: 4.7rem;
+  color: white;
+}
+
+.carousel__content button {
+  padding: 0.7rem 1.8rem;
+  background-color: red;
+  color: white;
+  font-size: 1rem;
+  border: 1px solid red;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.carousel__content button:hover {
+  background-color: #af2239;
+}
+
+/* services */
+
+#services {
+  background: black;
+  padding: 4.5rem 0;
+}
+
+.services_title p {
+  color: red;
+  font-weight: 200;
+}
+
+.services_title h1 {
+  color: white;
+  font-size: 2.8rem;
+  font-weight: 500;
+}
+
+.services_title .customers {
+  color: #888888;
+}
+
+.services_title {
+  text-align: center;
+}
+
+.item_services {
+  background-color: white;
+  padding: 3.8rem;
+  margin: 1rem;
+  text-align: center;
+  position: relative;
+}
+
+.list_services {
+  display: flex;
+  justify-content: center;
+}
+.item_services i {
+  font-size: 2rem;
+}
+.item_services::after {
+  content: "";
+  width: 5px;
+  display: block;
+  height: 0;
+  background-color: red;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.item_services:hover::after {
+  height: 100%;
+  transition: 1s;
+}
